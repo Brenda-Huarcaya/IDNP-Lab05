@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".MenuActivity">
+
+    <!-- TITULO -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu principal"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:translationX="75dp"
+        android:translationY="160dp"/>
+
+    <!-- BOTON NUEVO -->
+    <Button
+        android:id="@+id/buttonNew"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:text="Nuevo"
+        android:background="@drawable/button_shape"
+        android:drawableLeft="@drawable/agregar"
+        android:translationX="75dp"
+        android:translationY="260dp"/>
+
+    <!-- BOTON INFO -->
+    <Button
+        android:id="@+id/buttonInfo"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:text="Info. Postulante"
+        android:background="@drawable/button_shape"
+        android:translationX="75dp"
+        android:translationY="280dp"/>
+</LinearLayout>

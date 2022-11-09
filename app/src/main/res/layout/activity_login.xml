@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".LoginActivity">
+
+    <!-- LOGO -->
+    <ImageView
+        android:id="@+id/logoView"
+        android:layout_width="450px"
+        android:layout_height="400px"
+        android:adjustViewBounds="true"
+        android:src="@drawable/epis_final"
+        android:translationX="100dp"
+        android:translationY="90dp" />
+
+    <!-- TITULO -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:translationX="140dp"
+        android:translationY="110dp" />
+
+    <!-- USUARIO -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textStyle="bold"
+        android:translationX="40dp"
+        android:translationY="150dp" />
+
+    <EditText
+        android:id="@+id/textUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="textPersonName"
+        android:translationX="120dp"
+        android:translationY="120dp" />
+
+    <!-- CONTRASENA -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:textStyle="bold"
+        android:translationX="40dp"
+        android:translationY="150dp" />
+
+    <EditText
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="textPassword"
+        android:translationX="120dp"
+        android:translationY="120dp" />
+
+    <!-- BOTON -->
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_shape"
+        android:drawableLeft="@drawable/ingresar"
+        android:text="Ingresar"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:translationX="117dp"
+        android:translationY="170dp" />
+
+</LinearLayout>

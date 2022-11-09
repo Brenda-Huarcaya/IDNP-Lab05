@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".PostulanteInfoActivity">
+
+    <!-- TITULO -->
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informacion postulante"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:translationX="30dp"
+        android:translationY="70dp"/>
+
+    <!-- BUSCADOR -->
+    <EditText
+        android:id="@+id/texDNIsearch"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:translationX="70dp"
+        android:translationY="115dp"
+        android:layout_below="@id/textView12"/>
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="Buscar"
+        android:background="@drawable/button_shape"
+        android:translationX="230dp"
+        android:translationY="120dp"
+        android:layout_below="@id/textView12"/>
+
+    <!-- PRIMER DATO - DNI -->
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DNI"
+        android:translationX="50dp"
+        android:translationY="170dp"
+        android:layout_below="@id/texDNIsearch"/>
+
+    <EditText
+        android:id="@+id/infDNI"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textPersonName"
+        android:translationX="185dp"
+        android:translationY="160dp"
+        android:layout_below="@id/buttonSearch" />
+
+    <!-- SEGUNDO DATO - NOMBRE -->
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombres"
+        android:translationX="50dp"
+        android:translationY="220dp"
+        android:layout_below="@id/textView26"/>
+
+    <EditText
+        android:id="@+id/infNombres"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textPersonName"
+        android:translationX="185dp"
+        android:translationY="185dp"
+        android:layout_below="@id/infDNI"/>
+
+    <!-- TERCER DATO - APELLIDOS -->
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellidos"
+        android:translationX="50dp"
+        android:translationY="270dp"
+        android:layout_below="@id/textView27"/>
+
+    <EditText
+        android:id="@+id/infApellidos"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textPersonName"
+        android:translationX="185dp"
+        android:translationY="210dp"
+        android:layout_below="@id/infNombres"/>
+
+    <!-- CUARTO DATO - FECHA NACIMIENTO -->
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha nacimiento"
+        android:translationX="50dp"
+        android:translationY="320dp"
+        android:layout_below="@id/textView28"/>
+
+    <EditText
+        android:id="@+id/infFecha"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textPersonName"
+        android:translationX="185dp"
+        android:translationY="235dp"
+        android:layout_below="@id/infApellidos"/>
+
+    <!-- QUINTO DATO - COLEGIO -->
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Colegio"
+        android:translationX="50dp"
+        android:translationY="370dp"
+        android:layout_below="@id/textView29"/>
+
+    <EditText
+        android:id="@+id/infColegio"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textPersonName"
+        android:translationX="185dp"
+        android:translationY="260dp"
+        android:layout_below="@id/infFecha"/>
+
+    <!-- SEXTO DATO - CARRERA -->
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carrera"
+        android:translationX="50dp"
+        android:translationY="420dp"
+        android:layout_below="@id/textView30"/>
+
+    <EditText
+        android:id="@+id/infCarrera"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textPersonName"
+        android:translationX="185dp"
+        android:translationY="285dp"
+        android:layout_below="@id/infColegio"/>
+
+    <!-- BOTON - LIMPIAR -->
+    <Button
+        android:id="@+id/buttonLimpiar"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="Limpiar"
+        android:background="@drawable/button_shape"
+        android:drawableLeft="@drawable/limpiar"
+        android:translationX="135dp"
+        android:translationY="350dp"
+        android:layout_below="@id/infCarrera"/>
+
+</RelativeLayout>
